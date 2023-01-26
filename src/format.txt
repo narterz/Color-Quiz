@@ -1,0 +1,16 @@
+description: A game where the user has guess the color.
+    Modes
+        -HexMode: User will be given a box and will have to choose corresponding hexcode
+        -RGBMode: User will be given a box and will have to choose corresponding rgb code
+
+
+    App
+        Header: will contain links to the two Modes
+        RGBMode: will contain the RBG game
+        HexMode: will contain the hex game
+        GenerateAnswers: will generate button answers for both game Modes
+            -generateHex(): will generate a random hexcode
+            -generate RGB(): will generate a random RGB code
+        ColorBox: will contain randomly generated color box and output a boolean or correct or incorrect depending on the answer
+            -GenerateBox(): will generate the randomly colored box
+            -isCorrect(): will display either correct or incorrect depending on the users answer. 
